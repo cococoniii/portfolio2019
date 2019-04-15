@@ -1,3 +1,48 @@
-nav{
-    display: inline;
+body {
+    color: #414141;
+    line-height: 2rem;
+    padding-bottom: 10rem;
+}
+
+.main_color{
+    color: #4192DF;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+h2 {
+    margin-bottom: 3rem;
+}
+
+.margin-bottom {
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    color: #4192DF;
+}
+
+.card {
+    background-color: #F1F7FF;
+}
+
+.nav {
+    float: right;
+    background-color: none;
+    padding-right: 01rem;
+    
+}
+
+.nav-link {
+    color: gray;
+}
+
+a:hover {
+    color: #4192DF;
+}
+
+.card{
+    width: 100%;
 }

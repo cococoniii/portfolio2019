@@ -5,77 +5,199 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
 
-  <title>Hello, world!4 </title>
+  <title>Yun-Hsuan Liao's Portfolio</title>
   <style>
-    .btn-group {
-      margin: auto;
+    .btn_group {
+      padding: 2rem 0 2rem 0;
+    }
+
+    a {
+      color: gray;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: gray;
+    }
+
+    .text_area {
+      padding: 1rem;
+    }
+
+    .card {
+      box-shadow: 4px 4px 12px 4px rgba(20%, 20%, 40%, 0.1);
+      display: block;
+    }
+
+    .index_card {
+      float: left;
     }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
+  <div class="container-fluid">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+    </ul>
+
+    <div class="col-xs-12 col-md-12">
+
+      <div class="col-md-8 col-xs-12" style="margin:auto;padding-top: 3rem;">
+
+        <div class="col-md-12 name" style="height: 60vh;">
+          <img src="img/IAM.png" alt="" style="padding-top: 25vh;">
+        </div>
+        <div class="col-md-12 btn_group">
+          <button type="button" class="btn btn-primary">ALL</button>
+          <button type="button" class="btn btn-default">UX / UI</button>
+          <button type="button" class="btn btn-default">OTHER</button>
+        </div>
+
+        <div class="col-md-12" style="padding: 0;">
+
+          <div class="col-md-4 col-xs-12 index_card" style="padding: 0.5rem;">
+            <a href="camping.html">
+              <img src="img/Group -1.png" alt="" style="width: 100%">
+            </a>
+          </div>
+
+          <div class="col-md-4 col-xs-12 index_card" style="padding: 0.5rem;">
+            <a href="camping.html">
+              <img src="img/Group -1.png" alt="" style="width: 100%">
+            </a>
+          </div>
+
+          <div class="col-md-4 col-xs-12 index_card" style="padding: 0.5rem;">
+            <a href="camping.html">
+              <img src="img/Group -1.png" alt="" style="width: 100%">
+            </a>
+          </div>
+
+          <div class="col-md-4 col-xs-12 index_card" style="padding: 0.5rem;">
+            <a href="camping.html">
+              <img src="img/Group -1.png" alt="" style="width: 100%">
+            </a>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col-md-12 row" style="padding: 0;display: none">
+          <div class="col-md-6 card" style="padding: 0px;">
+            <div class="col-md-12" style="padding: 0;">
+              <img src="img/camping_01.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-12 text_area">
+              <h4 class="main_color">CAMPING</h4>
+              <p>Booking campsites platform</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 card" style="padding: 0px;">
+            <div class="col-md-12" style="padding: 0;">
+              <img src="img/camping_01.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-12 text_area">
+              <h4 class="main_color">CAMPING</h4>
+              <p>Booking campsites platform</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="card-deck" style="display: none">
+
+          <a href="camping.html">
+            <div class="card">
+              <img src="img/camping_01.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CAMPING</h5>
+                <p class="card-text">Booking campsites platform</p>
+                <a href="#" class="btn btn-primary" style="display: none;">more</a>
+              </div>
+            </div>
+          </a>
+
+          <a href="lockitin.html">
+            <div class="card">
+              <img src="img/camping_01.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LOCK IT IN</h5>
+                <p class="card-text">Open the door with smart lock</p>
+                <a href="#" class="btn btn-primary" style="display: none;">more</a>
+              </div>
+            </div>
+          </a>
+
+          <a href="camping.html">
+            <div class="card">
+              <img src="img/camping_01.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LOCK IT IN</h5>
+                <p class="card-text">Open the door with smart lock</p>
+                <a href="#" class="btn btn-primary" style="display: none;">more</a>
+              </div>
+            </div>
+          </a>
+
+          <a href="camping.html">
+            <div class="card">
+              <img src="img/camping_01.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LOCK IT IN</h5>
+                <p class="card-text">Open the door with smart lock</p>
+                <a href="#" class="btn btn-primary" style="display: none;">more</a>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+
+
       </div>
+
     </div>
-  </nav>
-
-
-  <div class="col-md-12" style="background-color: burlywood">
-    <div class="col-md-10" style="background-color: chocolate;margin: auto;">
-      <div style="margin: 10px;">
-        <button type="button" class="btn btn-primary">ALL</button>
-        <button type="button" class="btn btn-primary">UX/UI</button>
-        <button type="button" class="btn btn-primary">OTHER</button>
-      </div>
-
-      <div class="card-deck">
-        <div class="card">
-          <img src="img/camping_01.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CAMPING</h5>
-            <p class="card-text">Booking campsites platform</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/camping_01.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/camping_01.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
 
   </div>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
