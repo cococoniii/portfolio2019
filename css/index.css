@@ -4,6 +4,10 @@ body {
     padding-bottom: 8rem;
 }
 
+h2{
+    color: black;
+}
+
 .main_color{
     color: #4192DF;
 }
