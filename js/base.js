@@ -7,6 +7,7 @@ var app1 = new Vue({
         text: 'PORTFOLIO',
         url: 'index.html'
       },
+      /* 
       {
         text: 'MESSAGE',
         url: 'message.html'
@@ -23,6 +24,7 @@ var app1 = new Vue({
         text: 'VISUAL',
         url: 'visual.html'
       }
+      */
     ]
   },
   computed:{
