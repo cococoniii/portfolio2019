@@ -33,3 +33,7 @@ var app1 = new Vue({
     }
   }
 })
+AOS.init({
+  once: false,
+  mirror: true
+});
