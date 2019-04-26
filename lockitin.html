@@ -2,108 +2,99 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 
-    <title>Yun-Hsuan Liao's Portfolio</title>
-    <style>
+  <title>Yun-Hsuan Liao's Portfolio</title>
+  <style>
 
-    </style>
+  </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-            <div class="clearfix">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-            </li>
-        </ul>
+  <div class="container-fluid">
+    <div class="clearfix">
+      <ul id="app1" class="nav">
+        <li class="nav-item" v-for="item in navList">
+          <a class="nav-link" :href="item.url" :class="{active: item.url === currentPage}">{{item.text}}</a>
+        </li>
+      </ul>
     </div>
 
-        <div><img src="img/lock/main.png" alt="" style="width: 100%;"></div>
-        <div class="col-xs-12 col-md-12">
-            <div class="col-md-7" style="margin:auto;padding-top:3rem;">
-                <h2>LOCK IT IN</h2>
-                <h4>Overview</h4>
-                <span>
-                    With the recent growth in smart home technology many companies are springing up that provide smart
-                    locks. These locks allow users to use their smartphone instead of a key. <br><br>
+    <div><img src="img/lock/main.png" alt="" style="width: 100%;"></div>
+    <div class="col-xs-12 col-md-12">
+      <div class="col-md-7" style="margin:auto;padding-top:3rem;">
+        <h2>LOCK IT IN</h2>
+        <h4>Overview</h4>
+        <span>
+          With the recent growth in smart home technology many companies are springing up that provide smart
+          locks. These locks allow users to use their smartphone instead of a key. <br><br>
 
-                    My job is to create a smartphone app that will allow users to interact with their smart lock. Make
-                    sure that users can lock/unlock their door, view current status, and review recent activity.
-                </span><br><br>
+          My job is to create a smartphone app that will allow users to interact with their smart lock. Make
+          sure that users can lock/unlock their door, view current status, and review recent activity.
+        </span><br><br>
 
-                <h4>User Stories</h4>
+        <h4>User Stories</h4>
 
-                <ul class="list-group" style="padding: 1rem 0 1rem 0;">
-                    <li class="list-group-item"><b>lock/unlock door</b><br>
-                        as a user I want to lock my front door of my house from office so I do not have to go back to my
-                        home to make sure whether it is lock or not
-                    </li>
-                    <li class="list-group-item"><b>view recent activity
-                        </b><br>
-                        as a user I want to view recent activities so I can know who opened the door and when the door
-                        had been opened
-                    </li>
-                    <li class="list-group-item"><b>invite guests
-                        </b><br>
-                        as a user I want to send digital key to guest so I do not have to be available when the door of
-                        my house need to be opened
-                    </li>
-                </ul><br><br>
+        <ul class="list-group" style="padding: 1rem 0 1rem 0;">
+          <li class="list-group-item"><b>lock/unlock door</b><br>
+            as a user I want to lock my front door of my house from office so I do not have to go back to my
+            home to make sure whether it is lock or not
+          </li>
+          <li class="list-group-item"><b>view recent activity
+            </b><br>
+            as a user I want to view recent activities so I can know who opened the door and when the door
+            had been opened
+          </li>
+          <li class="list-group-item"><b>invite guests
+            </b><br>
+            as a user I want to send digital key to guest so I do not have to be available when the door of
+            my house need to be opened
+          </li>
+        </ul><br><br>
 
-                <h4>IA</h4>
-                <span>
-                    <img src="img/lock/IA.png" alt="" style="width: 100%">
-                </span><br><br>
+        <h4>IA</h4>
+        <span>
+          <img src="img/lock/IA.png" alt="" style="width: 100%">
+        </span><br><br>
 
-                <h4>Logic Flow</h4>
-                <span>
-                    <img src="img/lock/User Flow.png" alt="" style="width: 100%">
-                </span><br><br>
+        <h4>Logic Flow</h4>
+        <span>
+          <img src="img/lock/User Flow.png" alt="" style="width: 100%">
+        </span><br><br>
 
-                <h4>Sketches</h4>
+        <h4>Sketches</h4>
 
-                <h4>Wireframe</h4>
-                <span>
-                    <img src="img/lock/wireframe.png" alt="" style="width: 100%">
-                </span> <br><br> <br><br>
+        <h4>Wireframe</h4>
+        <span>
+          <img src="img/lock/wireframe.png" alt="" style="width: 100%">
+        </span> <br><br> <br><br>
 
 
-            </div>
-        </div>
+      </div>
     </div>
-    <footer>
-        Copyright &copy; <x id="year"></x> Yun-Hsuan Liao
-    </footer>
+  </div>
+  <footer>
+    Copyright &copy; <x id="year"></x> Yun-Hsuan Liao
+  </footer>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-        <script src="./js/base.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/base.js"></script>
 </body>
 
 </html>
